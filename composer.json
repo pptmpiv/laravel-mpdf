@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": "^5.6|^7.0|^8.0",
-        "mpdf/mpdf": "^8.0"
+        "mpdf/mpdf": "dev-pptmpiv-patch-1"
     },
     "autoload": {
         "psr-4": {
@@ -21,5 +21,11 @@
                 "PDF": "Mccarlosen\\LaravelMpdf\\Facades\\LaravelMpdf"
             }
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/pptmpiv/mpdf"
+        }
+    ]
 }
